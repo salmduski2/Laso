@@ -193,6 +193,39 @@ Language | لغة <br>
 </div>
 </div>
 
+	
+	<div align="center"style="solid black;background:#CCCCCC">
+<br><br>Safe Feature | ميزات امن 
+<div class="w3-content w3-display-container w3-animate-zoom">       
+  <img class="mySlides" src="../screenshots/safe.MP4" style="width="80%" height="170" />
+<br><br>
+
+</div></div></div>
+
+</div>
+
+<p></p>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}  
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
